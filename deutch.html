@@ -1,199 +1,303 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Lebenslauf</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 20px;
-      }
-      h1 {
-        font-size: 24px;
-        margin-bottom: 10px;
-      }
-      h2 {
-        font-size: 20px;
-        margin-bottom: 10px;
-      }
-      h3 {
-        font-size: 18px;
-        margin-bottom: 10px;
-      }
-      ul {
-        list-style-type: disc;
-        margin: 0;
-        padding-left: 20px;
-      }
-      .section {
-        margin-bottom: 20px;
-      }
-      .subsection {
-        margin-left: 20px;
-      }
-    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicyz="no-referrer"
+    />
   </head>
-  <body>
-    <h1>Lebenslauf</h1>
-    <div class="section">
-      <h2>Name:</h2>
-      <p>Mark Kamau</p>
+
+  <body class="m-10 bg-white flex-1">
+    <div class="flex items-center">
+      <!-- Title div -->
+      <div class="container text-blue-300">
+        <!-- name -->
+        <div class="text-4xl">Mark Kamau</div>
+        <!-- Career -->
+        <div class="text-2xl">Softwareentwickler</div>
+        <!-- info  -->
+        <div class="text-black text-sm">
+          <div class="flex">
+            <p class="pr-3">Nairobi, Kenia</p>
+            <p class="pr-3">+254741091345</p>
+            <p class="text-blue-300">mkakamau@gmail.com</p>
+          </div>
+          <div class="flex items-center text-md">
+            <div class="flex ml-2 mr-2 items-center">
+              <i class="fa-brands fa-github text-blue-500"></i>
+              <a class="text-blue-300 ml-2" href="https://github.com/markxkamau"
+                >github.com/markxkamau</a
+              >
+            </div>
+            <div class="flex items-center">
+              <i class="fa-brands fa-linkedin-in text-blue-500"></i>
+              <a
+                class="text-blue-300 ml-2"
+                href="https://www.linkedin.com/in/mark-kamau-250979208/"
+              >
+                linkedin.com/in/mark-kamau-250979208/
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Photo  -->
+      <div>
+        <img
+          src="./Images/signal-2023-02-06-213145.jpeg"
+          alt="Profile Image"
+          class="w-32 h-32 rounded-none shadow"
+        />
+      </div>
     </div>
-    <div class="section">
-      <h2>Beruf:</h2>
-      <p>Softwareentwickler</p>
-    </div>
-    <div class="section">
-      <h2>Ort:</h2>
-      <p>Nairobi, Kenia</p>
-    </div>
-    <div class="section">
-      <h2>Kontakt:</h2>
-      <ul>
-        <li>Telefon: +254741091345</li>
-        <li>E-Mail: mkakamau@gmail.com</li>
-        <li>
-          GitHub:
-          <a href="https://github.com/markxkamau">github.com/markxkamau</a>
-        </li>
-        <li>
-          LinkedIn:
-          <a href="https://linkedin.com/in/mark-kamau-250979208/"
-            >linkedin.com/in/mark-kamau-250979208/</a
-          >
-        </li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Berufserfahrung</h2>
-      <div class="subsection">
-        <h3>Aug 2022 - Jetzt: Online-Tutor</h3>
+    <!-- Work Experience -->
+    <div class="mt-10">
+      <!-- Work Title -->
+      <div class="font-bold text-2xl pb-2">Berufserfahrung</div>
+      <hr class="h-1 bg-black" />
+      <!-- list of Work Experience -->
+      <div class="pt-2">
         <ul>
-          <li>Informatik</li>
-          <li>
-            Abgedeckte Einheiten:
-            <ul>
-              <li>Webentwicklung</li>
-              <li>Computergrafik</li>
-              <li>Cloud Computing</li>
-              <li>Einführung in die Programmierung</li>
-              <li>Systemsicherheit</li>
-              <li>Mikrocontroller-Programmierung mit Arduino C</li>
-              <li>Schemadesign und Leiterplatte (Printed Circuit Board)</li>
-            </ul>
+          <!-- Institute -->
+          <li class="flex justify-between">
+            <!-- Duration -->
+            <div class="font-bold w-1/3">Aug 2022 - Jetzt</div>
+            <!-- Detail -->
+            <div class="w-2/3">
+              <!-- Job Title -->
+              <div class="font-bold text-blue-300">Online-Tutor</div>
+              <!-- institution -->
+              <div class="text-gray-500">Informatik</div>
+              <!-- Info  -->
+              <div>
+                <p class="font-bold">Abgedeckte Einheiten:</p>
+                <ol>
+                  <li>Webentwicklung</li>
+                  <li>Computergrafik</li>
+                  <li>Cloud Computing</li>
+                  <li>Einführung in die Programmierung</li>
+                  <li>Systemsicherheit</li>
+                  <li>Mikrocontroller-Programmierung mit Arduino C</li>
+                  <li>Schemadesign und Leiterplatte (Printed Circuit Board)</li>
+                </ol>
+              </div>
+            </div>
+          </li>
+          <!-- Institute -->
+          <li class="flex justify-between">
+            <!-- Duration -->
+            <div class="font-bold w-1/3">16. Mai 2022 - 16. Juli 2022</div>
+            <!-- Detail -->
+            <div class="w-2/3">
+              <!-- Job Title -->
+              <div class="font-bold text-blue-300">Industriepraktikum</div>
+              <!-- institution -->
+              <div class="text-gray-500">Simlaw Seeds Ltd</div>
+              <!-- Info  -->
+              <div>
+                <p class="font-bold">Zugeteilte Abteilungen:</p>
+                <ol>
+                  <li>IT-Abteilung</li>
+                  <li>Registraturabteilung</li>
+                </ol>
+                <p class="font-bold">Erfahrungen gesammelt</p>
+                <ol>
+                  <li>
+                    Verwendete das ASP.NET-Framework zum Generieren von APIs und
+                    WebMVC
+                  </li>
+                  <li>
+                    Spring-Framework zur Verbesserung der
+                    Registrierungsabteilung verwendet
+                  </li>
+                  <li>Server sichern und installieren</li>
+                </ol>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
-      <div class="subsection">
-        <h3>16. Mai 2022 - 16. Juli 2022: Industriepraktikum</h3>
+    </div>
+    <!-- Education -->
+    <div class="mt-10">
+      <!-- Education Title -->
+      <div class="font-bold text-2xl pb-2">Ausbildung</div>
+      <hr class="h-1 bg-black" />
+      <!-- list of Education -->
+      <div class="pt-2">
         <ul>
-          <li>Simlaw Seeds Ltd</li>
-          <li>
-            Zugeteilte Abteilungen:
-            <ul>
-              <li>IT-Abteilung</li>
-              <li>Registraturabteilung</li>
-            </ul>
+          <!-- university -->
+          <li class="flex justify-between">
+            <!-- Duration -->
+            <div class="font-bold w-1/3">August 2018 - November 2022</div>
+            <!-- Detail -->
+            <div class="w-2/3">
+              <!-- Course Title -->
+              <div class="font-bold text-blue-300">
+                Bachelor of Science in Informatik
+              </div>
+              <!-- institution -->
+              <div class="text-gray-500">St Paul's University</div>
+              <!-- Info  -->
+              <div>
+                <p class="font-bold">
+                    Umgesetzte Projekte (Alle auf Github verfügbar)
+                </p>
+                <ol>
+                    <li>
+                        Registrierungskontakt-Webanwendung zum Speichern von Unternehmenskontakten
+                        und schnell darauf zugreifen. (Anhang-Projektidee)
+                      </li>
+                      <li>
+                        Hardware-Projekt zur Verbesserung der Sicherheit zu Hause mithilfe von Wärme
+                        Kameras. (Abschlussjahrprojekt)
+                      </li>
+                      <li>
+                        Website der Kirche zur Verbesserung der Verbindungen in der Gemeinde.
+                        (Anwendungsentwicklung für das Internet)
+                      </li>
+                      <li>Gesichts- und Augenerkennung (Künstliche Intelligenz)</li> </ol>
+                <p class="font-bold">Außerschulische Aktivitäten</p>
+                <ol>
+                    <li>Mitglied, Schachgemeinschaft</li>
+                    <li>Mitglied, Computer Science Tech Club</li>
+                </ol>
+              </div>
+            </div>
           </li>
-          <li>
-            Erfahrungen gesammelt:
-            <ul>
-              <li>Verwendung von JIRA-Ticketsystem</li>
-              <li>Umgang mit Kundendaten und Archivierung</li>
-            </ul>
+          <!-- High school -->
+          <li class="flex justify-between mt-10">
+            <!-- Duration -->
+            <div class="font-bold w-1/3">2014 - 2017</div>
+            <!-- Detail -->
+            <div class="w-2/3">
+              <!-- Course Title -->
+              <div class="font-bold text-blue-300">
+                Kenia-Zertifikat für weiterführende Bildung
+              </div>
+              <!-- institution -->
+              <div class="text-gray-500">Muhoho High School</div>
+              <!-- Info  -->
+              <div>
+                Teilnehmer, Mathematikwettbewerb (3 Zertifikate von
+                Wertschätzung) <br />
+                Mitglied, Drama Club <br />
+                Mitglied, Basketballmannschaft
+              </div>
+            </div>
+          </li>
+          <!-- Primary School -->
+          <li class="flex justify-between mt-10">
+            <!-- Duration -->
+            <div class="w-1/3 font-bold">2008 - 2013</div>
+            <!-- Detail -->
+            <div class="w-2/3">
+              <!-- Course Title -->
+              <div class="font-bold text-blue-300">
+                Kenia-Zertifikat für Grundschulbildung
+              </div>
+              <!-- institution -->
+              <div div class="text-gray-500">Valence School</div>
+              <!-- Info  -->
+              <!-- <div>Average A-(minus) Mathematics A Science A</div> -->
+            </div>
           </li>
         </ul>
       </div>
-    </div>
-    <div class="section">
-      <h2>Ausbildung</h2>
-      <div class="subsection">
-        <h3>2022 - Jetzt: Bachelor of Science in Informatik</h3>
+      <!-- Skills -->
+      <div>
+        <!-- Skill Title -->
+        <div class="font-bold text-2xl pb-2">Fähigkeiten</div>
+        <hr class="h-1 bg-black" />
+        <!-- list of Skills -->
+        <div class="pt-2">
+          <ul>
+            <!-- Technical Skills -->
+            <li class="flex justify-between">
+              <!-- Left Title -->
+              <div class="font-bold w-1/3">Technische Fähigkeiten</div>
+              <!-- Detail -->
+              <div class="w-2/3">
+                <p class="font-bold">Sprachen:</p>
+                C++, C#, Git, Java, Kotlin, Python, PHP, HTML und CSS
+                <p class="font-bold">Framework:</p>
+                SpringBoot, ASP.NET, django
+                <p class="font-bold">Software:</p>
+                Visual Studio, Netbeans, Eclipse, Android Studio, Talend Open
+                Studio, Anaconda, Jupyter Notebook, Pycharm, IntelliJ IDEA,
+                PgAdmin, Matlab, DevCpp, SQLSERVER
+                <p class="font-bold">Betriebssysteme:</p>
+                Windows XP, 7, 8, 10 und Unix/Linux
+                <p class="font-bold">Datenbanken:</p>
+                SQL
+                <p class="font-bold">Bibliothek:</p>
+                OpenCV, TensorFlow
+                <p class="font-bold">Hardware-Tools:</p>
+                Raspberry Pi 4 Modell B, Arduino Uno, Arduino IDE
+              </div>
+            </li>
+            <!-- <hr> -->
+            <!-- Soft Skills -->
+            <li class="flex justify-between mt-10">
+              <!-- Left Title -->
+              <div class="font-bold w-1/3">Soft Skills</div>
+              <!-- Detail -->
+              <div class="w-2/3">
+                <ul>
+                  <li>Anpassungsfähigkeit</li>
+                  <li>Kommunikation</li>
+                  <li>Teamarbeit</li>
+                  <li>Schnelles Lernen</li>
+                  <li>Problemlösung</li>
+                </ul>
+              </div>
+            </li>
+            <!-- <hr> -->
+            <!-- Language Skills -->
+            <li class="flex justify-between mt-10">
+              <!-- Left Title -->
+              <div class="font-bold w-1/3">Sprachkenntnisse</div>
+              <!-- Detail -->
+              <div class="w-2/3">
+                <ul>
+                  <li>Englisch (fließend)</li>
+                  <li>Swahili (fließend)</li>
+                  <li>Kikuyu (Muttersprache)</li>
+                  <li>Deutsch (Niveau A2)</li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Interests -->
+      <div class="font-bold text-2xl pb-2">Interessen</div>
+
+      <hr class="h-1 bg-black" />
+      <!-- List of Interests -->
+      <div class="pt-2">
         <ul>
-          <li>Universität von Nairobi</li>
-          <li>
-            Schwerpunkte:
-            <ul>
-              <li>Softwareentwicklung</li>
-              <li>Algorithmen und Datenstrukturen</li>
-              <li>Datenbanken</li>
-              <li>Künstliche Intelligenz</li>
-            </ul>
-          </li>
+            <li>Künstliche Intelligenz</li>
+            <li>Quantencomputing</li>
+            <li>Musik</li>
+            <li>Gaming</li>
+            <li>Reisen</li>
         </ul>
       </div>
     </div>
-    <div class="section">
-      <h2>Kenntnisse</h2>
-      <div class="subsection">
-        <h3>Programmiersprachen</h3>
-        <ul>
-          <li>Python</li>
-          <li>Java</li>
-          <li>C++</li>
-          <li>JavaScript</li>
-          <li>HTML/CSS</li>
-          <li>SQL</li>
-          <li>Arduino C</li>
-        </ul>
-      </div>
-      <div class="subsection">
-        <h3>Tools und Frameworks</h3>
-        <ul>
-          <li>Git</li>
-          <li>Visual Studio Code</li>
-          <li>Eclipse</li>
-          <li>Android Studio</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Express.js</li>
-        </ul>
-      </div>
-      <div class="subsection">
-        <h3>Hardwarekenntnisse</h3>
-        <ul>
-          <li>Raspberry Pi</li>
-          <li>Arduino Raspberry Pi</li>
-          <li>Arduino Uno</li>
-          <li>Arduino IDE</li>
-        </ul>
-      </div>
-      <div class="subsection">
-        <h3>Soft Skills</h3>
-        <ul>
-          <li>Anpassungsfähigkeit</li>
-          <li>Kommunikation</li>
-          <li>Teamarbeit</li>
-          <li>Schnelles Lernen</li>
-          <li>Problemlösung</li>
-        </ul>
-      </div>
-    </div>
-    <div class="section">
-      <h2>Sprachkenntnisse</h2>
-      <ul>
-        <li>Englisch (Fließend)</li>
-        <li>Swahili (Fließend)</li>
-        <li>Kikuyu (Muttersprache)</li>
-        <li>Deutsch (Niveau A2)</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Interessen</h2>
-      <ul>
-        <li>Künstliche Intelligenz</li>
-        <li>Quantencomputing</li>
-        <li>Musik</li>
-        <li>Gaming</li>
-        <li>Reisen</li>
-      </ul>
-    </div>
-    <p>
-      Bitte beachten Sie, dass dieser Lebenslauf aus dem bereitgestellten
-      HTML-Code generiert wurde. Die Formatierungen und Stile wurden in dieser
-      HTML-Version beibehalten.
-    </p>
   </body>
 </html>
